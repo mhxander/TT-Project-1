@@ -68,6 +68,10 @@ var quotes = [
     actor: 'Andy Serkis',
     movie: "The Lord of the Rings: The Two Towers",
     year: 2002
+  },
+  {
+    quote: 'Once the game is over, the king and the pawn go back in the same box.',
+    source: 'Italian Proverb'
   }
 ];
 
