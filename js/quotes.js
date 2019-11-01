@@ -1,3 +1,10 @@
+/*
+  These are my quotes.  They are mostly from movies.  For the movie quotes,
+  I included the quote, the character who said it, who played them, the movie, and the year the movie was released.
+  The last quote is one that I really like, which wasn't in a movie.  It also doesn't have the same info as the movie
+  quotes, so I could use the if... statement on it.
+*/
+
 var quotes = [ 
   { 
     quote: 'Luke, you’re going to find that many of the truths we cling to depend greatly on our own point of view.',
@@ -74,5 +81,3 @@ var quotes = [
     source: 'Italian Proverb'
   }
 ];
-
-
