@@ -19,16 +19,16 @@ body {
 }
 
 .quote {
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 1.1;
+  font-size: 2 rem;
+  font-weight: 200;
+  line-height: 1;
   position: relative;
   margin: 0;
 }
 
 .quote:before, .quote:after {
-  font-size: 3rem;
-  line-height: 2.5rem;
+  font-size: 2 rem;
+  line-height: 2 rem;
   position: absolute;
 }
 
@@ -50,11 +50,35 @@ body {
   letter-spacing: 0.05em;
   line-height: 1.1;
   text-align: right;
-  margin-right: 4em;
+  margin-right: 5em;
 }
 
 .source:before {
   content: "—";
+}
+
+.actor {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: right;
+  margin-right: 4em;
+}
+
+.actor:before {
+  content: " , played by ";
+}
+
+.movie {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: right;
+  margin-right: 4em;
+}
+
+.movie:before {
+  content: " ";
 }
 
 .citation {
@@ -67,7 +91,7 @@ body {
 }
 
 .year:before {
-  content: ", ";
+  content: " ";
   font-style: normal;
 }
 

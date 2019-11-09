@@ -4,7 +4,6 @@ project 1 - A Random Quote Generator
 ******************************************/
 
 var html = "";
-var quote = getRandomQuote();
 var info
 var rand
 
@@ -14,7 +13,7 @@ var rand
    - Use the random number to `return` a random quote object from the `quotes` array.
 ***/
 function getRandomQuote() {
-  rand = parseInt(Math.floor(Math.random() * 13 ));
+  rand = parseInt(Math.floor(Math.random() * 11 ));
   return quotes[rand];
 }
 
@@ -32,33 +31,33 @@ function getRandomQuote() {
    - Don't forget to close that final `p` tag.
    - Set the `innerHTML` of the `quote-box` div to the HTML string. 
 */
-
+function printQuote(html) {
 // Call getRandomQuote, and print the quote to the variable, quote
-quote = getRandomQuote();
+  var quote = getRandomQuote();
 
 
 
 //building "html" string with source, and, as needed, actor, movie, and year
 // <p class="source">source<span class="citation">movie</span><span class="year">year</span></p>
-html += "<p class = 'quote'>" + quote.quote + '</p>';
-html += "<p class = 'source'>" + quote.source;
-if (quote.actor) {
-  html += "<span class = 'source'>" + quote.actor + "</span>"
-}
-if (quote.movie) {
-  html += "<span class = 'source'>" + quote.movie + "</span>"
-}
-if (quote.year) {
-  html += "<span class = 'year'>" + quote.year + "</span>"
-}
-html += "</p>"
+  html += "<p class = 'quote'>" + quote.quote + '</p>';
+  html += "<p class = 'source'>" + quote.source;
+  if (quote.actor) {
+    html += "<span class = 'actor'>" + quote.actor + "</span>"
+  }
+  if (quote.movie) {
+    html += "<span class = 'movie'>" + quote.movie + "</span>"
+  }
+  if (quote.year) {
+    html += "<span class = 'year'>" + quote.year + "</span>"
+  }
+  html += "</p>"
 
 
 
-console.log(html);
+  console.log(html);
 
-function printQuote(html) {
-  var outputDiv = document.getElementById('loadQuote');
+
+  var outputDiv = document.getElementById('quote-box');
   outputDiv.innerHTML = html;
 }
 
