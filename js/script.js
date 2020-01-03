@@ -13,7 +13,7 @@ var rand;
    - Use the random number to `return` a random quote object from the `quotes` array.
 ***/
 function getRandomQuote() {
-  rand = parseInt(Math.floor(Math.random() * quote.length ));
+  rand = parseInt(Math.floor(Math.random() * quotes.length ));
   return quotes[rand];
 }
 
