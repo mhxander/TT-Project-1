@@ -3,9 +3,9 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-var html = "";
-var info
-var rand
+
+var info;
+var rand;
 
 /***
   Create the `getRandomQuote` function to:
@@ -13,7 +13,7 @@ var rand
    - Use the random number to `return` a random quote object from the `quotes` array.
 ***/
 function getRandomQuote() {
-  rand = parseInt(Math.floor(Math.random() * 11 ));
+  rand = parseInt(Math.floor(Math.random() * quote.length ));
   return quotes[rand];
 }
 
@@ -31,10 +31,10 @@ function getRandomQuote() {
    - Don't forget to close that final `p` tag.
    - Set the `innerHTML` of the `quote-box` div to the HTML string. 
 */
-function printQuote(html) {
+function printQuote() {
 // Call getRandomQuote, and print the quote to the variable, quote
   var quote = getRandomQuote();
-
+  var html = "";
 
 
 //building "html" string with source, and, as needed, actor, movie, and year
@@ -60,7 +60,7 @@ function printQuote(html) {
   var outputDiv = document.getElementById('quote-box');
   outputDiv.innerHTML = html;
 }
-
+printQuote();
 
 /***
   When the "Show another quote" button is clicked, the event listener 
